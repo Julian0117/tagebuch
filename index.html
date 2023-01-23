@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapietagebuch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="top">
+        <h1 onclick="swapcontent()">Zu Beginn der Therapie <img class="arrowleft" src="white-arrow-left.png"> <img class="arrowright" src="grey-arrow-right.png"> Heute</h1>
+        <ul class="before">
+          <li id="allein">Allein (emotionale) Einsamkeit</li>
+          <li id="gefangen">Zu Hause "gefangen"</li>
+          <li id="energie">Energie- und Antriebslosigkeit</li>
+          <li id="schwermut">Schwermut, Hoffnungslosigkeit</li>
+          <li id="motivation">Keine Ziele / Motivation</li>
+        </ul>
+        <ul class="arrow1">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+        </ul>
+        <ul class="after1">
+          <li>Emotionale Verbindung / Nähe zu Freundin</li>
+          <li>Emanzipation von Familie / zu Hause</li>
+          <li>Mehr Enenergie und Unternehmungslust</li>
+          <li>Mehr Freude und hoffnungsvoller in Bezug auf die Zukunft</li>
+          <li>Ziele: Beziehung mit Freundin pflegen, Ausbildung / Studium -> Job in IT</li>
+        </ul>
+        <ul class="before">
+          <li>Kein Selbstvertrauen</li>
+          <li>Kein Job, kein Geld -> Abhängigkeit von Eltern</li>
+          <li>Soziale Phobie, kaum soziale Interaktion, Beziehungen</li>
+          <li>Verdrängung von negativen Emotionen & Gedanken durch Schlaf / Medien-konsum</li>
+        </ul>
+        <ul class="arrow2">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+        </ul>
+        <ul class="after2">
+          <li>Wachsendes Selbstvertrauen</li>
+          <li>Selbstbestimmung / Unabhängigkeit durch Wohnung, Arbeit in Karlsruhe -> "Freiheit"</li>
+          <li>Steigerung sozialer Kompetenz</li>
+          <li>Diversere Freizeitgestaltung: Gitarre, Kochen, Tischtennis, Unternehmungen mit Freundin</li>
+        </ul>
+    </div>
+
+<!-- <div id="middle">
+        <h1>Platzhalter 2</h1>
+            <ul>
+                <li>Entgegengesetztes Handeln (Impuls Rückzug <-> Teilhabe)</li>
+            </ul> -->
+</div>
+
+<div id="bottom">
+    <h1 onclick="swapcontent()">Zu Beginn der Therapie <---> Heute</h1>
+        <ul class="before">
+          <li id="allein">Allein (emotionale) Einsamkeit</li>
+          <li id="gefangen">Zu Hause "gefangen"</li>
+          <li id="energie">Energie- und Antriebslosigkeit</li>
+          <li id="schwermut">Schwermut, Hoffnungslosigkeit</li>
+          <li id="motivation">Keine Ziele / Motivation</li>
+        </ul>
+        <ul class="arrow1">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+        </ul>
+        <ul class="after1">
+          <li>Emotionale Verbindung / Nähe zu Freundin</li>
+          <li>Emanzipation von Familie / zu Hause</li>
+          <li>Mehr Enenergie und Unternehmungslust</li>
+          <li>Mehr Freude und hoffnungsvoller in Bezug auf die Zukunft</li>
+          <li>Ziele: Beziehung mit Freundin pflegen, Ausbildung / Studium -> Job in IT</li>
+        </ul>
+        <ul class="before">
+          <li>Kein Selbstvertrauen</li>
+          <li>Kein Job, kein Geld -> Abhängigkeit von Eltern</li>
+          <li>Soziale Phobie, kaum soziale Interaktion, Beziehungen</li>
+          <li>Verdrängung von negativen Emotionen & Gedanken durch Schlaf / Medien-konsum</li>
+        </ul>
+        <ul class="arrow2">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+          <img src="black-arrow-down.png">
+        </ul>
+        <ul class="after2">
+          <li>Wachsendes Selbstvertrauen</li>
+          <li>Selbstbestimmung / Unabhängigkeit durch Wohnung, Arbeit in Karlsruhe -> "Freiheit"</li>
+          <li>Steigerung sozialer Kompetenz</li>
+          <li>Diversere Freizeitgestaltung: Gitarre, Kochen, Tischtennis, Unternehmungen mit Freundin</li>
+        </ul>
+</div>
+
+<script>
+    // function swapbackground() {
+    //     var element = document.body;
+    //     element.classList.toggle("dark-mode");
+    // }
+
+    function swapcontent() {
+  var x = document.getElementById("top");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+  var y = document.getElementById("bottom");
+  if (y.style.display === "none") {
+    y.style.display = "flex";
+  } else {
+    y.style.display = "none";
+  }
+}
+</script>
+
+<!-- _-_-_-_-_-_-_-_-_-_-_ -->
+
+<h2>1st Modal</h2>
+
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal1">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header1</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+<h2>2nd Modal</h2>
+
+<!-- Trigger/Open The Modal -->
+<button class="modal-button" href="#myModal2">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Modal Header2</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
+</script>
+
+</body>
+
+</html>
